@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Esqueci a senha</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+	<script src="	https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<form>
+			<div class="alert alert-info">
+				<center><strong>INFORME SEU EMAIL</strong><br>
+				<input type="email" id="txtEsqueciEmail" onclick= "validar();" placeholder="E-mail">
+				<button type="button" class="btn btn-dark">Ok</button>
+				</center>
+			</div>
+		</form>
+	</div>
+</body>
+</html>
+
+<script lang="javascript">
+	function validar(){
+		if(txtEsqueciEmail.value.length < 6 || 
+			txtEsqueciEmail.value.indexOf("@") < 1 ||
+			 txtEsqueciEmail.value.lastIndexOf(".") <= txtEsqueciEmail.value.indexOf("@")
+		){
+			alert("Informe um email valido!");
+			txtEsqueciEmail.focus();
+			return false;
+		}
+	}
+
+</script>
