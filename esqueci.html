@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Esqueci a senha</title>
+	<link rel="stylesheet" href="esqueci_css.css" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
 	<script src="	https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
@@ -12,8 +13,8 @@
 		<form>
 			<div class="alert alert-info">
 				<center><strong>INFORME SEU EMAIL</strong><br>
-				<input type="email" id="txtEsqueciEmail" onclick= "validar();" placeholder="E-mail">
-				<button type="button" class="btn btn-dark">Ok</button>
+				<input type="email" id="txtEsqueciEmail" placeholder="E-mail">
+				<button type="button" class="btn btn-dark" onclick= "validar();">Ok</button>
 				</center>
 			</div>
 		</form>
@@ -31,6 +32,7 @@
 			txtEsqueciEmail.focus();
 			return false;
 		}
+		alert("E-mail com nova senha enviado!");
 	}
 
 </script>
