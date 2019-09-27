@@ -1,5 +1,50 @@
+body{
+	background: #263238;
+}
+
+h1{
+	width: 87%;
+	border-bottom: 5px solid #A62A2A;
+    background-color: lightgrey;
+}
+
 .btn2{
-	margin-left: 20px;
+	float: right;
+	color: black;
+}
+#logo{
+	margin-left: 20%;
+}
+#busca{
+	margin-top: 50px;
+	font-size: 20px;
+	size: 20px;
+}
+#cadastro{
+	margin-top: 50px;
+	float: right;
+	margin-right: 20%;
+}
+#img1{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#celularback {
+	border-radius: 10px;
+	background: white;
+	text-align: left;
+	width: 20%;
+	border: 2px solid black;
+}
+#txt1_c1{
+	font-family: serif;
+	font-size: 15px;
+}
+#txt2_c1{
+	font-size: 20px;
+	font-family: serif;
+	color: orange;
 }
 
 
