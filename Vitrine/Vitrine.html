@@ -10,50 +10,61 @@
 		<link rel="stylesheet" href="estilo.css" />
 	</head>
 	<body>
-		<div class="container">
-		<form>
-			
-		<div class="row">
-			<div class="col-lg-4 col-md-6 col-xs-12">
-				<img id=logo src="LogoRedonda.png" class="rounded" alt="Cinque Terre"></img>
+		<div class="container">		
+			<div class="menu_topo">
+				<div class="row justify-content-center">
+					<div class="col-lg-2 col-md-2 col-xs-3">
+						<img id=logo src="LogoRedonda.png" class="rounded" alt="Cinque Terre"></img>
+					</div>
+					<div id="busca" class="col-lg-8 col-md-8 col-xs-7">
+						<input type="text" id="txtBusca" placeholder="Busca"/>
+						<button type="button" id="botaoBusca" class="btn btn-dark">Ok</button> 
+					</div>
+
+					<div class="col-lg-2 hcol-md-2 col-xs-2">
+						 <button id="botaoCadastro" type="button" class="btn btn-blue">Ok</button>
+					</div>
+				</div>
 			</div>
-			<div id="busca" class="col-lg-4 col-md-6 col-xs-12">
-				<input type="text" id="txtBusca" placeholder="Busca">
-				<button type="button" class="btn btn-dark">Ok</button> 
-			</div>
-			<div class="col-lg-4 hcol-md-6 col-xs-12">
-				 	<button id="cadastro" type="button" class="btn btn-blue">Ok</button>
-			</div>
-		</div>
+
 			<center>
-			<h1>MENU</h1>
-			</center>		
+			<h1>MENU</h1>		
+			</center>
+
+			<div class="celulares">
+					<div id="celularback" class="col-lg-6 col-md-6 col-xs-6"> 
+
+							<img src="celular1.png" id="img" class="rounded" alt="Cinque Terre"></img>
+							<p id="nomeCelular"> Xiaomi Mi Jogar Global Version </p>
+							<p id="precoCelular"> R$ 659,95
+								<button type="button" class="btnCompra">Comprar</button>
+							</p>
+					</div>
+					<div id="celularback" class="col-lg-6 col-md-6 col-xs-6"> 
+							<img src="celular2.png" id="img" class="rounded" alt="Cinque Terre"></img>
+							<p id="nomeCelular"> Samsung Galaxy S10e Preto </p>
+							<p id="precoCelular"> R$ 2.509,95
+								<button type="button" class="btnCompra">Comprar</button>
+							</p>
+						</div>
+					</div>
+					<div id="celularback2" class="col-lg-6 col-md-6 col-xs-6"> 
+
+							<img src="celular3.png" id="img" class="rounded" alt="Cinque Terre"></img>
+							<p id="nomeCelular"> iPhone X </p>
+							<p id="precoCelular"> R$ 4049,00
+								<button type="button" class="btnCompra">Comprar</button>
+							</p>
+					</div>
+					<div id="celularback2" class="col-lg-6 col-md-6 col-xs-6"> 
+
+							<img src="celular4.png" id="img" class="rounded" alt="Cinque Terre"></img>
+							<p id="nomeCelular"> Samsung Galaxy A80 </p>
+							<p id="precoCelular"> R$ 2.429,10
+								<button type="button" class="btnCompra">Comprar</button>
+							</p>
+					</div>
+			</div>
 		</div>	
-		
-		<div class="celulares">
-			<div id="celularback" style="margin-left: 20%" class="col-lg-6 col-md-6 col-xs-12"> 
-
-					<img src="celular1.jpg" id="img1" class="rounded" alt="Cinque Terre"></img>
-					<p id="txt1_c1">
-						Xiaomi Mi Jogar Global Version 
-					</p>
-					<p id="txt2_c1">
-						R$ 659,95
-						<button type="button" class="btn2">Comprar</button>
-					</p>
-			</div>
-			<div id="celularback" style="margin-left: 20%" class="col-lg-6 col-md-6 col-xs-12"> 
-
-					<img src="celular2.png" id="img1" class="rounded" alt="Cinque Terre"></img>
-					<p id="txt1_c1">
-						Samsung Galaxy S10e Preto
-					</p>
-					<p id="txt2_c1">
-						R$ 2.509,95
-						<button type="button" class="btn2">Comprar</button>
-					</p>
-			</div>
-		</div>
-
 	</body>
 </html>	

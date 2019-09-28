@@ -1,72 +1,101 @@
 body{
 	background: #263238;
 }
-
-h1{
-	width: 87%;
+.menu_topo{
+	margin-top: 18px;
+	border-radius: 60px;
+	background-color: #A62A2A;
+}
+#busca{ /* txt e botão */
+	margin-top: 29px;
+}
+#txtBusca{
+	width: 90%;
+	float: left;
+	border-radius: 30px;
+	padding-left: 10px;
+	font-size: 280%;
+}
+#botaoBusca{
+	width: 10%;
+	height: 60px;
+	border: 2px solid black;
+}
+#botaoCadastro{
+	border: 2px solid black;
+ 	border-radius: 25px;
+	float: left;
+	margin-top: 29px;
+	height: 60px;
+	width: 50%;
+}
+h1{ /*MENU*/
+	font-size: 50px;
+	width: 100%;
 	border-bottom: 5px solid #A62A2A;
     background-color: lightgrey;
-}
-
-.btn2{
-	float: right;
-	color: black;
-}
-#logo{
-	margin-left: 20%;
-}
-#busca{
-	margin-top: 50px;
-	font-size: 20px;
-	size: 20px;
-}
-#cadastro{
-	margin-top: 50px;
-	float: right;
-	margin-right: 20%;
-}
-#img1{
-	display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
 #celularback {
 	border-radius: 10px;
 	background: white;
 	text-align: left;
-	width: 20%;
 	border: 2px solid black;
 }
-#txt1_c1{
+#celularback2 {
+	margin-top: 5px;
+	border-radius: 10px;
+	background: white;
+	text-align: left;
+	border: 2px solid black;
+}
+#nomeCelular{
 	font-family: serif;
 	font-size: 15px;
 }
-#txt2_c1{
+#precoCelular{
 	font-size: 20px;
 	font-family: serif;
 	color: orange;
 }
-
-
-/*
-@media screen and (max-width: 420px) and (min-width: 0px){
-	.vermelho{
-		width: 100%;
-		margin-left:0;
-		height: 100vh;
-		background-color:red;
-		padding: 5px;
-		box-sizing: border-box;
+.btnCompra{
+	float: right;
+	color: black;
+}
+#img{
+	width: 100%;
+}
+@media screen and (max-width: 1140px) and (min-width: 0px){
+	#txtBusca{
+		width: 85%;
+		height: 50%;
 	}
-	.vermelho .azul {
-		width: 100%;
-		height: 40%;
-		background-color: blue;		
+	#botaoBusca{
+		width: 15%;
+		height: 50px;
 	}
-	.vermelho .amarelo {
-		width: 100%;
-		height: 30%;
-		background-color: yellow;	
-	}	
-	body{margin: 0;}
+	#botaoCadastro{
+		width: 40%;
+		height: 50px;
+	}
+}
+
+@media screen and (max-width: 960px) and (min-width: 0px){
+	#txtBusca{
+		width: 80%;
+		height: 50%;
+	}
+	#botaoBusca{
+		width: 20%;
+		height: 50px;
+	}
+	#celularback {
+		border-radius: 10px;
+		background: white;
+		text-align: left;
+		width: 50%;
+		border: 2px solid black;
+	}
+	#botaoCadastro{
+		width: 50px;
+	}
 }
