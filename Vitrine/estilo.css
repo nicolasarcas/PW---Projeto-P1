@@ -6,8 +6,8 @@ body{
 	border-radius: 60px;
 	background-color: #A62A2A;
 }
-#busca{ /* txt e botão */
-	margin-top: 29px;
+#busca, #botaoCadastro{ /* txt e botão */
+	margin-top: 28px;
 }
 #txtBusca{
 	width: 90%;
@@ -16,18 +16,20 @@ body{
 	border-top-left-radius: 30px; 
 	padding-left: 20px;
 	font-size: 280%;
+	border: 2px solid black;
+}
+#botaoBusca, #botaoCadastro{
+	height: 61px;
+	border: 2px solid black;
 }
 #botaoBusca{
+	border-radius: 0px;
 	width: 10%;
-	height: 63px;
-	border: 2px solid black;
+	border-left-width: 0px;
 }
 #botaoCadastro{
-	border: 2px solid black;
  	border-radius: 25px;
 	float: left;
-	margin-top: 29px;
-	height: 63px;
 	width: 50%;
 }
 h1{ /*MENU*/
@@ -36,14 +38,7 @@ h1{ /*MENU*/
 	border-bottom: 5px solid #A62A2A;
     background-color: lightgrey;
 }
-#celularback {
-	border-radius: 10px;
-	background: white;
-	text-align: left;
-	border: 2px solid black;
-}
-#celularback2 {
-	margin-top: 5px;
+#celulardiv1,#celulardiv2, #celulardiv3, #celulardiv4 {
 	border-radius: 10px;
 	background: white;
 	text-align: left;
@@ -66,17 +61,20 @@ h1{ /*MENU*/
 	width: 100%;
 }
 @media screen and (max-width: 1140px) and (min-width: 0px){
+	#busca, #botaoCadastro{ /* txt e botão */
+		margin-top: 33px;
+	}
 	#txtBusca{
 		width: 85%;
 		height: 50%;
 	}
 	#botaoBusca{
 		width: 15%;
-		height: 52px;
+		height: 50px;
 	}
 	#botaoCadastro{
-		width: 40%;
-		height: 52px;
+		width: 55%;
+		height: 51px;
 	}
 }
 
@@ -87,9 +85,9 @@ h1{ /*MENU*/
 	}
 	#botaoBusca{
 		width: 20%;
-		height: 52px;
+		height: 50px;
 	}
-	#celularback {
+	#celulardiv1,#celulardiv2, #celulardiv3, #celulardiv4 {
 		border-radius: 10px;
 		background: white;
 		text-align: left;
