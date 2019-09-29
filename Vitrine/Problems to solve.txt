@@ -1,4 +1,4 @@
-N„o consegui uma soluÁ„o atÈ o momento.
+Problemas do queias n√£o consegui achar uma solu√ß√£o at√© o momento:
 
-- N„o est· com "Case sensitive" na busca
-- A busca sÛ ocorre precionando o bot„o "OK" (necess·rio adicionar aÁ„o quando for precionada a tecla "Enter" dentro do input.
+- N√£o est√° com "Case sensitive" na busca
+- A busca s√≥ ocorre precionando o bot√£o "OK" (necess√°rio adicionar a√ß√£o para quando for precionada a tecla "Enter" dentro do input tamb√©m).
