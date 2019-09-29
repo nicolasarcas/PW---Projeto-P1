@@ -12,13 +12,14 @@ body{
 #txtBusca{
 	width: 90%;
 	float: left;
-	border-radius: 30px;
+	border-bottom-left-radius: 30px;
+	border-top-left-radius: 30px; 
 	padding-left: 10px;
 	font-size: 280%;
 }
 #botaoBusca{
 	width: 10%;
-	height: 60px;
+	height: 63px;
 	border: 2px solid black;
 }
 #botaoCadastro{
@@ -26,7 +27,7 @@ body{
  	border-radius: 25px;
 	float: left;
 	margin-top: 29px;
-	height: 60px;
+	height: 63px;
 	width: 50%;
 }
 h1{ /*MENU*/
@@ -71,11 +72,11 @@ h1{ /*MENU*/
 	}
 	#botaoBusca{
 		width: 15%;
-		height: 50px;
+		height: 52px;
 	}
 	#botaoCadastro{
 		width: 40%;
-		height: 50px;
+		height: 52px;
 	}
 }
 
@@ -86,7 +87,7 @@ h1{ /*MENU*/
 	}
 	#botaoBusca{
 		width: 20%;
-		height: 50px;
+		height: 52px;
 	}
 	#celularback {
 		border-radius: 10px;
