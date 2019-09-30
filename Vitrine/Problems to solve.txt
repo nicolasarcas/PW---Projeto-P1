@@ -1,4 +1,0 @@
-Problemas do queias não consegui achar uma solução até o momento:
-
-- Não está com "Case sensitive" na busca
-- A busca só ocorre precionando o botão "OK" (necessário adicionar ação para quando for precionada a tecla "Enter" dentro do input também).
