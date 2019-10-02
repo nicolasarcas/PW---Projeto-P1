@@ -63,7 +63,7 @@
 					<center>
 						</br></br></br>
 						<h3>AINDA NAO TENHO CADASTRO</h3></br>
-						<button type="button" id="btnCadastro" class="btn btn-dark">CADASTRAR</button>
+						<button type="button" id="btnCadastro" class="btn btn-dark" onclick="cadastrar()">CADASTRAR</button>
 					</center> 
 				</div>
 			</div>
@@ -89,6 +89,9 @@
 			return false;
 		}
 		alert("Logado com sucesso!");
-		window.location.href = "C:/Users/aluno/Desktop/PW---Projeto-P1-master/vitrine.html";
+		window.location.href = "vitrine.html";
+	}
+	function cadastrar(){
+		window.location.href = "cadastrar.html";
 	}
 </script>
