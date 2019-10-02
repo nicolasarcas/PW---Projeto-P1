@@ -1,0 +1,27 @@
+body{
+	background: #263238;
+}
+#esqueci{
+	background-color:  #A62A2A;
+	border-radius: 60px;
+	margin-top: 250px;
+	height: 150px;
+}
+#email{
+	margin-top: 20px;
+	color: white;
+}
+
+#txtEsqueciEmail{
+	width: 50%;
+	margin-top: 9px;
+	height: 40px;
+	border-bottom-left-radius: 30px;
+	border-top-left-radius: 30px;
+	padding-left: 15px;
+	font-size: 150%;
+}
+
+#btnEsqueci{
+	height: 40px;
+}
