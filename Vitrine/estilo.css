@@ -16,10 +16,11 @@ body{
 	border-top-left-radius: 30px; 
 	padding-left: 20px;
 	font-size: 280%;
+	height: 60px;
 	border: 2px solid black;
 }
 #botaoBusca, #botaoCadastro{
-	height: 61px;
+	height: 60px;
 	border: 2px solid black;
 }
 #botaoBusca{
@@ -60,36 +61,52 @@ h1{ /*MENU*/
 	font-family: serif;
 	color: orange;
 }
+#img{
+	width: 100%;
+}
 .btnCompra{
 	float: right;
 	color: black;
 }
 @media screen and (max-width: 1140px) and (min-width: 0px){
-	#busca, #botaoCadastro{ /* txt e botão */
-		margin-top: 33px;
+	#textEspecificacoes{
+		font-size: 85%;
+		margin-right: 60px;
 	}
 	#txtBusca{
 		width: 85%;
-		height: 50%;
+		height: 63px;
 	}
 	#botaoBusca{
 		width: 15%;
-		height: 50px;
+		height: 63px;
 	}
 	#botaoCadastro{
 		width: 55%;
-		height: 51px;
+		height: 63px;
 	}
 }
 
 @media screen and (max-width: 960px) and (min-width: 0px){
+	#textEspecificacoes{
+		margin-top: 10px;
+		font-size: 55%;
+		margin-right: 20%;
+	}
+	#img{
+		width: 100%;
+	}
 	#txtBusca{
 		width: 80%;
-		height: 50%;
+		height: 50px;
 	}
 	#botaoBusca{
 		width: 20%;
 		height: 50px;
+	}
+	#botaoCadastro{
+		height: 50px;
+		width: 50px;
 	}
 	#celulardiv1,#celulardiv2, #celulardiv3, #celulardiv4 {
 		border-radius: 10px;
@@ -97,8 +114,5 @@ h1{ /*MENU*/
 		text-align: left;
 		width: 50%;
 		border: 2px solid black;
-	}
-	#botaoCadastro{
-		width: 50px;
 	}
 }
