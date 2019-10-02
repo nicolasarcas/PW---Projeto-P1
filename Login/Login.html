@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+		<script src="	https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		<meta charset="utf-8">
+
+		<title>Login</title>
+		<link rel="stylesheet" href="estiloLogin.css" />
+	</head>
+	
+	<body>
+		<div class="container">		
+			<div class="menu_topo">
+				<div class="row justify-content-center">
+					<div class="col-lg-2 col-md-2 col-xs-3">
+						<a href="vitrine.html">
+							<img id=logo src="LogoRedonda.png" class="rounded" alt="Cinque Terre"/>
+						</a>
+					</div>
+					<div id="busca" class="col-lg-8 col-md-8 col-xs-7">
+						<input type="text" id="txtBusca" placeholder="Busca"/>
+						<button type="button" onclick="botaoAcionado()" id="botaoBusca" class="btn btn-dark"
+						>Ok</button> 
+					</div>
+
+					<div class="col-lg-2 hcol-md-2 col-xs-2">
+						<center>
+						 <img id=logo src="perfil.png" class="rounded" alt="Cinque Terre"/>
+						</center>
+					</div>
+				</div>
+			</div>
+
+			<center>
+			<h1>MENU</h1>		
+			</center>
+
+			<div class="blocoPrincipal">
+				<div id="blocoCadastro" class="col-lg-6 col-md-6 col-xs-6">
+					<center>
+						<h3>JA TENHO CADASTRO</h3>
+						</br>
+						<p id="lblLogin"> EMAIL </p>
+						<input type="email" id="txtEmailLogin" placeholder="E-mail">
+						<p id="lblSenha"> SENHA </p>
+						<input type="password" id="txtSenhaLogin" placeholder="******">
+						</br>
+						<button type="button" id="btnEntrar" class="btn btn-dark" onclick="entrar()" >ENTRAR</button>
+						</br>
+						</br>
+						<a href="esqueci.html">
+							<p id="txtEsqueciSenha">Esqueci minha senha</p>
+						</a>
+					</center>
+					
+					
+				</div>
+
+				<div class="col-lg-6 col-md-6 col-xs-6">
+					<center>
+						</br></br></br>
+						<h3>AINDA NAO TENHO CADASTRO</h3></br>
+						<button type="button" id="btnCadastro" class="btn btn-dark">CADASTRAR</button>
+					</center> 
+				</div>
+			</div>
+		</div>	
+	</body>
+</html>	
+
+<script lang="javascript">
+	/* txtEmailLogin, txtSenhaLogin*/
+	function entrar(){
+		if(txtEmailLogin.value.length < 6 || 
+			txtEmailLogin.value.indexOf("@") < 1 ||
+			 txtEmailLogin.value.lastIndexOf(".") <= txtEmailLogin.value.indexOf("@")
+		){
+			alert("Informe um email valido!");
+			txtEmailLogin.focus();
+			return false;
+		}
+
+		if(txtSenhaLogin.value.length < 6){
+			alert("Senha inválida");
+			txtSenhaLogin.focus();
+			return false;
+		}
+		alert("Logado com sucesso!");
+		window.location.href = "C:/Users/aluno/Desktop/PW---Projeto-P1-master/vitrine.html";
+	}
+</script>

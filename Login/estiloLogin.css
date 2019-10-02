@@ -1,0 +1,152 @@
+body{
+	background: #263238;
+}
+.blocoPrincipal{
+	margin-top: 30px;
+}
+#blocoCadastro{
+	border-right: 2px solid white;
+}
+.login{
+	background: white;
+	display: block;
+}
+.menu_topo{
+	margin-top: 18px;
+	border-radius: 60px;
+	background-color: #A62A2A;
+}
+#busca, #botaoCadastro{ /* txt e botão */
+	margin-top: 28px;
+}
+#txtBusca{
+	width: 90%;
+	float: left;
+	border-bottom-left-radius: 30px;
+	border-top-left-radius: 30px; 
+	padding-left: 20px;
+	font-size: 280%;
+	height: 60px;
+	border: 2px solid black;
+}
+#botaoBusca, #botaoCadastro{
+	height: 60px;
+	border: 2px solid black;
+}
+#botaoBusca{
+	border-radius: 0px;
+	width: 10%;
+	border-left-width: 0px;
+}
+#botaoCadastro{
+ 	border-radius: 25px;
+	float: left;
+	width: 50%;
+}
+#lblLogin, #lblSenha{
+	color: white;
+}
+#teste{
+	border: 4px white;
+}
+#txtEsqueciSenha{
+	color: light blue;
+	font-size: 115%;
+}
+#btnEntrar{
+	float:right;
+}
+#txtEmailLogin, #txtSenhaLogin{
+	width: 50%;
+}
+h3{
+	color: white;
+}
+h1{ /*MENU*/
+	font-size: 50px;
+	width: 100%;
+	border-bottom: 5px solid #A62A2A;
+    background-color: lightgrey;
+}
+/*
+#textEspecificacoes{
+	float: right;
+	font-size: 130%;
+	margin-right: 20%;
+	margin-top: 30px;
+	display: none;
+} 
+#celulardiv1,#celulardiv2, #celulardiv3, #celulardiv4 {
+	border-radius: 10px;
+	background: white;
+	text-align: left;
+	border: 2px solid black;
+}
+#nomeCelular{
+	font-family: serif;
+	font-size: 15px;
+}
+#precoCelular{
+	font-size: 20px;
+	font-family: serif;
+	color: orange;
+}
+#img{
+	width: 100%;
+}
+.btnCompra{
+	float: right;
+	color: black;
+}
+*/
+@media screen and (max-width: 1140px) and (min-width: 0px){
+	#textEspecificacoes{
+		font-size: 85%;
+		margin-right: 60px;
+	}
+	#txtBusca{
+		width: 85%;
+		height: 63px;
+	}
+	#botaoBusca{
+		width: 15%;
+		height: 63px;
+	}
+	#botaoCadastro{
+		width: 55%;
+		height: 63px;
+	}
+	#txtEmailLogin, #txtSenhaLogin{
+	width: 70%;
+	}
+}
+
+@media screen and (max-width: 960px) and (min-width: 0px){
+	#textEspecificacoes{
+		margin-top: 10px;
+		font-size: 55%;
+		margin-right: 20%;
+	}
+	#img{
+		width: 100%;
+	}
+	#txtBusca{
+		width: 80%;
+		height: 50px;
+	}
+	#botaoBusca{
+		width: 20%;
+		height: 50px;
+	}
+	#botaoCadastro{
+		height: 50px;
+		width: 50px;
+	}
+	#celulardiv1,#celulardiv2, #celulardiv3, #celulardiv4 {
+		border-radius: 10px;
+		background: white;
+		text-align: left;
+		width: 50%;
+		border: 2px solid black;
+	}
+}
