@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+		<script src="	https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		<meta charset="utf-8">
+
+		<title>Esqueci a senha</title>
+		<link rel="stylesheet" href="estilo_esqueci.css" />
+	</head>
+	<body>
+	<div class="container">
+		<form>
+			<center>
+				<div id="esqueci" class="col-lg-12 col-md-8 col-xs-7">
+					<strong id="email"><h3>INFORME SEU EMAIL</h3></strong><br/>
+					<input type="email" id="txtEsqueciEmail" placeholder="E-mail">
+					<button type="button" id="btnEsqueci" class="btn btn-dark" onclick= "validar();">Ok</button>
+				</div>
+			</center>
+		</form>
+	</div>
+</body>
+</html>
+
+<script lang="javascript">
+	function validar(){
+		if(txtEsqueciEmail.value.length < 6 || 
+			txtEsqueciEmail.value.indexOf("@") < 1 ||
+			 txtEsqueciEmail.value.lastIndexOf(".") <= txtEsqueciEmail.value.indexOf("@")
+		){
+			alert("Informe um email valido!");
+			txtEsqueciEmail.focus();
+			return false;
+		}
+		alert("E-mail com nova senha enviado!");
+		window.location.href = "login.html";
+	}
+
+</script>
+	

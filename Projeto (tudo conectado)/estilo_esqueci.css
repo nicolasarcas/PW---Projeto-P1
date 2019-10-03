@@ -1,0 +1,38 @@
+body{
+	background: #263238;
+}
+#esqueci{
+	background-color:  #A62A2A;
+	border-radius: 60px;
+	margin-top: 250px;
+	height: 150px;
+}
+#email{
+	margin-top: 20px;
+	color: white;
+}
+#txtEsqueciEmail{
+	margin-left: 21%;
+	float: left;
+	width: 50%;
+	height: 25%;
+	border-bottom-left-radius: 30px;
+	border-top-left-radius: 30px;
+	padding-left: 15px;
+	font-size: 160%;
+	border: 2px solid black;
+}
+#btnEsqueci{
+	float: left;
+	height: 25%;
+	border-radius: 0px;
+	border-left-width: 0px;
+	border: 2px solid black;
+	border-left-width: 0px;
+}
+@media screen and (max-width: 720px) and (min-width: 0px){
+	#txtEsqueciEmail{
+		margin-left: 15%;
+	}
+
+}

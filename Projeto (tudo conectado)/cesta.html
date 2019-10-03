@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+		<script src="	https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		<meta charset="utf-8">
+
+		<title>Cesta</title>
+		<link rel="stylesheet" href="estiloCarrinho.css" />
+	</head>
+	
+	<body>
+		<div class="container">		
+			<div class="menu_topo">
+				<div class="row justify-content-center">
+					<div class="col-lg-2 col-md-2 col-xs-3">
+						<a href="vitrine.html">
+							<img id=logo src="LogoRedonda.png" class="rounded" alt="Cinque Terre"/>
+						</a>
+					</div>
+					<div id="busca" class="col-lg-8 col-md-8 col-xs-7">
+						<input type="text" id="txtBusca" placeholder="Busca"/>
+						<button type="button" onclick="botaoAcionado()" id="botaoBusca" class="btn btn-dark"
+						>Ok</button> 
+					</div>
+
+					<div class="col-lg-2 hcol-md-2 col-xs-2">
+						<a href="login.html">
+							<img id=logo src="perfil.png" class="rounded" alt="Cinque Terre"/>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<center>
+			<h1>MENU</h1>		
+			</center>
+
+			<h2>Cesta</h2>            
+
+			<table class="table table-bordered">
+			    <thead>
+			      <tr>
+			        <th>Item</th>
+			        <th>Quantidade</th>
+			        <th>Valor</th>
+			      </tr>
+			    </thead>
+			    <tbody>
+			      <tr>
+			        <td>Samsung Galaxy S10e</td>
+			        <td>1x</td>
+			        <td>R$ 2.509,95</td>
+			      </tr>
+			      <tr>
+			        <td>Xiaomi Mi Play</td>
+			        <td>1x</td>
+			        <td>R$ 659,95</td>
+			      </tr>
+			    </tbody>
+			</table>
+			<p id="total">3.169,9</p>
+			<p id="txtTotal">Total</p>
+			<hr/>
+			<div id="divBotoes">
+				<button id="btnLimparCesta">Limpar cesta</button>
+				<button id="btnFinalizar">Finalizar</button>
+			</div>
+		</div>	
+	</body>
+</html>	

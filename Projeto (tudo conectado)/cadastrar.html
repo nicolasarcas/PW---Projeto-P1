@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+	<script src="	https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<meta charset="utf-8">
+
+	<title>Cadastro</title>
+
+	<link rel="stylesheet" href="estiloCadastrar.css" />
+</head>
+<body>
+	<div class="container">
+		<center>
+			<h1>MENU</h1>		
+		</center>
+
+		<div class="form-group">
+  			<label for="txtNomeCadastro">Nome:</label>
+  			<input type="text" class="form-control" id="txtNomeCadastro" placeholder="Nome">
+		</div>
+
+		<div class="form-group1">
+  			<label for="txtEmailCadastro">E-mail:</label>
+  			<input type="email" class="form-control" id="txtEmailCadastro" placeholder="pyjack@gmail.com">
+		</div>
+
+		<div class="form-group2">
+			<div id="busca" class="col-lg-6 col-md-4 col-xs-2">
+  				<label for="txtSenhaCadastro">Senha:</label>
+  				<input type="email" class="form-control" id="txtSenhaCadastro" placeholder="Senha">
+  			</div>
+			<div id="busca" class="col-lg-6 col-md-4 col-xs-2">
+  				<label for="txtConfirmaSenhaCadastro">Confirmação:</label>
+  				<input type="email" class="form-control" id="txtConfirmaSenhaCadastro" placeholder="Confirme">
+  			</div>
+		</div>
+
+		<div class="form-group3">
+  			<label for="txtCpfCadastro">CPF:</label>
+  			<input type="number" class="form-control" id="txtCpfCadastro" placeholder="999.999.999.99">
+		</div>
+
+		<div class="form-group4">
+  			<label for="txtTelefoneCadastro">Telefone:</label>
+  			<input type="number" class="form-control" id="txtTelefoneCadastro" placeholder="99999-9999">
+		</div>
+		<br>
+		<button type="button" id="btnCadastro" class="btn btn-dark" onclick="validarCadastro()">Confirmar</button>
+	</div>
+</body>
+</html>
+
+<script lang="javascript">
+	function validarCadastro(){
+
+		if(txtNomeCadastro.value.length < 6){
+			alert("Digite seu nome completo");
+			txtNomeCadastro.focus();
+			return false;
+		}
+
+		if(txtEmailCadastro.value.length < 6 || 
+			txtEmailCadastro.value.indexOf("@") < 1 ||
+			 txtEmailCadastro.value.lastIndexOf(".") <= txtEmailCadastro.value.indexOf("@")
+		){
+			alert("Informe um email valido!");
+			txtEmailCadastro.focus();
+			return false;
+		}
+		if(txtSenhaCadastro.value.length < 5){
+			alert("Digite uma senha maior");
+			txtSenhaCadastro.focus();
+			return false;
+		}
+		if (txtSenhaCadastro != txtConfirmaSenhaCadastro) {
+			alert("Senha diferente da digitada");
+			txtConfirmaSenhaCadastro.focus();
+			return false;
+		}
+		if(txtCpfCadastro.value.length < 11){
+			alert("Digite seu CPF corretamente");
+			txtCpfCadastro.focus();
+			return false;
+		}
+		if(txtTelefoneCadastro.value.length < 8){
+			alert("Digite seu telefone corretamente");
+			txtTelefoneCadastro.focus();
+			return false;
+		}
+
+		window.location.href = "login.html";
+	}
+</script>

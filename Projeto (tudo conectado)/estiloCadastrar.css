@@ -1,0 +1,19 @@
+body{
+	background: #263238;
+}
+
+h1{ /*MENU*/
+	font-size: 50px;
+	width: 100%;
+	border-bottom: 5px solid #A62A2A;
+    background-color: lightgrey;
+}
+label{
+	color: white;
+}
+input{
+	width: 100px;
+}
+#btnCadastro{
+	float: right;
+}
