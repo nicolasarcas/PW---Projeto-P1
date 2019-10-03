@@ -68,37 +68,6 @@ h1{ /*MENU*/
 	border-bottom: 5px solid #A62A2A;
     background-color: lightgrey;
 }
-/*
-#textEspecificacoes{
-	float: right;
-	font-size: 130%;
-	margin-right: 20%;
-	margin-top: 30px;
-	display: none;
-} 
-#celulardiv1,#celulardiv2, #celulardiv3, #celulardiv4 {
-	border-radius: 10px;
-	background: white;
-	text-align: left;
-	border: 2px solid black;
-}
-#nomeCelular{
-	font-family: serif;
-	font-size: 15px;
-}
-#precoCelular{
-	font-size: 20px;
-	font-family: serif;
-	color: orange;
-}
-#img{
-	width: 100%;
-}
-.btnCompra{
-	float: right;
-	color: black;
-}
-*/
 @media screen and (max-width: 1140px) and (min-width: 0px){
 	#textEspecificacoes{
 		font-size: 85%;
